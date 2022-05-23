@@ -1,0 +1,37 @@
+@use '../helpers/functions' as *;
+
+:root {
+	/* Background Colors */
+	--bg-body: hsl(0, 0%, 96%);
+	--bg-card: hsl(0, 0%, 100%);
+	--bg-button: hsla(0, 0%, 0%, 0.75);
+
+	/* Font Color */
+	--color-font-primary: hsl(0, 0%, 20%);
+	--color-font-secondary: hsl(194, 87%, 97%);
+
+	/* Border Colors */
+	--color-input-border: hsl(0, 0%, 87%);
+	--color-button-border: hsl(0, 0%, 87%);
+
+	/* Hovers */
+	--hover-bg-button: hsla(0, 0%, 0%, 0.85);
+
+	/* Shadows */
+	--shadow: hsla(0, 0%, 0%, 0.25);
+
+	/* Font Families */
+	--font-family: 'Press Start 2P', cursive;
+
+	/* Font Size */
+	--font-size-body: clamp(1.3rem, 1.225rem + 0.3125vw, 1.6rem);
+	--h1: clamp(3rem, 2.25rem + 3.125vw, 6rem);
+
+	/* Font Weights */
+	--font-weight-400: 400;
+}
+
+#root {
+	width: min(100% - clamp(2em, 1.5em + 3.3333vw, 4em), em(1200));
+	margin-inline: auto;
+}

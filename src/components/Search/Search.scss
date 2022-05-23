@@ -1,0 +1,40 @@
+@use '../../assets/styles/helpers/mixins' as *;
+
+.form {
+	display: grid;
+	@include ipad {
+		grid-template-columns: auto 1fr auto;
+		gap: 1em;
+		align-items: center;
+	}
+
+	&__label {
+		text-transform: uppercase;
+	}
+
+	&__input,
+	&__button {
+		border-radius: 2em;
+		padding: 1em 2em;
+	}
+
+	&__input {
+		margin-block: 1em;
+		border: 1px solid var(--color-border);
+		@include ipad {
+			margin-block: 0;
+		}
+	}
+
+	&__button {
+		background-color: var(--bg-button);
+		border: 1px solid var(--color-button-border);
+		color: var(--color-font-secondary);
+		cursor: pointer;
+		transition: background-color 500ms ease-in-out;
+
+		&:hover {
+			background-color: var(--hover-bg-button);
+		}
+	}
+}
